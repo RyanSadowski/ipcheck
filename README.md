@@ -7,4 +7,4 @@ If you're getting errors about the imported modules use [pip](https://pip.pypa.i
 
 `pip install requests`
 
-Let me know if you see any errors or ways to imporve it!
+Let me know if you see any errors or ways to improve it!
