@@ -19,7 +19,7 @@ def SendEmail(ip):                                                  # SendEmail 
       server.login(gmail_address, gmail_password)
       server.sendmail(gmail_address, to_email ,ip)
       server.close()
-    except SMTPException:
+    except:
         print "Error: unable to send email"
 
 while True:
