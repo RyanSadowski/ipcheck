@@ -4,9 +4,9 @@ import time
 import requests
 import smtplib
 
-gmail_address = 'ryansadowskixyz@gmail.com'                         # This is our new gmail address that we created.
+gmail_address = 'xxxx@gmail.com'                                    # This is our new gmail address that we created.
 gmail_password = '********'                                         # This is the password to that email address.
-to_email = 'sadowskiryan@gmail.com'                                 # This is where we want to recieve the email
+to_email = 'to@email.com'                                           # This is where we want to recieve the email
 sleep_for = 600 # 600 = 10 min                                      # Time between IP Checks
 ip = ''                                                             # Initialize our ip variable
 
