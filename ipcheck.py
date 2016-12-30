@@ -4,10 +4,10 @@ import time
 import requests
 import smtplib
 
-gmail_address = 'xxxx@gmail.com'                                    # This is our new gmail address that we created.
+gmail_address = '****@gmail.com'                                    # This is our new gmail address that we created.
 gmail_password = '********'                                         # This is the password to that email address.
-to_email = 'to@email.com'                                           # This is where we want to recieve the email
-sleep_for = 600 # 600 = 10 min                                      # Time between IP Checks
+to_email = 'to@email.com'                                           # This is where we want to receive the email
+sleep_for = 60 * 10 # 10 minutes                                    # Time between IP Checks
 ip = ''                                                             # Initialize our ip variable
 
 def SendEmail(ip):                                                  # SendEmail function takes in the ip variable
@@ -23,8 +23,8 @@ def SendEmail(ip):                                                  # SendEmail 
         print "Error: unable to send email"
 
 while True:
-    if(requests.get('http://api.ipify.org/').status_code == 200):
-        r = requests.get('http://api.ipify.org')
+    r = requests.get('http://api.ipify.org')
+    if(r.status_code == 200):
         if (ip == r.text):
             print 'no change in IP'
         else:
